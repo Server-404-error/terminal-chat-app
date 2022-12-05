@@ -5,6 +5,22 @@ This project is a clone of IRC
 everybody is welcome to contribute to this project,
 later on i will specify the tasks for new contributers
 
+## prerequisite
+
+cmake version > 3.10
+
+if you dont have cmake:
+
+linux:
+sudo apt install cmake
+
+[linux instalition](https://www.linuxfordevices.com/tutorials/install-cmake-on-linux)
+[windows instalition](https://cmake.org/install/)
+
+## run the project
+(linux):
+`cd terminal-chat-app`
+`cmake ./build && make && ./chat`
 
 ## Contributing
 
