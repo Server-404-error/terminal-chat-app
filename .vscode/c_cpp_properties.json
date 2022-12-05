@@ -3,7 +3,8 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**../bin/json/include"
+                "${workspaceFolder}/**include",
+                "${workspaceFolder}/_deps/json-src/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
