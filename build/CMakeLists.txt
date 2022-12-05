@@ -4,6 +4,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 project(chat VERSION 1.0)
 add_executable(chat src/main.cpp)
+include_directories("../include/nlohmann/json.hpp")
 
 include(FetchContent)
 

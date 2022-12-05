@@ -3,7 +3,7 @@
 #include <stdbool.h>
 #include <string>
 #include <fstream>
-#include <nlohmann/json.hpp>  //ignore the squigly lines if you have them
+#include <../nlohmann/json.hpp>  //ignore the squigly lines if you have them
 
 using json = nlohmann::json;
 using namespace std;
