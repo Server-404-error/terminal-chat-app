@@ -2,12 +2,50 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string>
+#include <fstream>
+#include <nlohmann/json.hpp>  //ignore the squigly lines if you have them
 
+using json = nlohmann::json;
+using namespace std;
 
+int read()
+{
+    std::string file = "src/data.json";
+    std::ifstream f(file);
+    json data = json::parse(f);
+    // Access the values existing in JSON data
+    string name = data.value("name", "not found");
+    string grade = data.value("grade", "not found");
+    string email = data.value("email", "not found");
+    // Print the values
+    f.close();
+    std::cout << "Name : " << name << std::endl;
+    std::cout << "Grade : " << grade << std::endl;
+    std::cout << "Email : " << email << std::endl;
 
+    return 0;
+}
 
-void store_in_json(std::string username, std::size_t hashedPassword){
-//store user data to users.json
+void store_in_json(std::string username, std::size_t hashedPassword)
+{
+    json user;
+    std::ifstream i("users.json");
+    if(i.is_open()){
+        i >> user;
+    }
+    // system("cls");
+    int userCount = 0;
+    for (auto it = user.begin(); it != user.end(); ++it) //we iterate through the json file to add the new user in the end, 
+    {
+        userCount += 1;
+        std::cout << *it << std::endl;
+    }
+    userCount += 1;
+    user[std::to_string(userCount)]["username"] = username;
+    user[std::to_string(userCount)]["password"] = hashedPassword;
+
+    std::ofstream file("users.json");
+    file << user;
 }
 
 bool not_verified(std::string password)
@@ -42,6 +80,7 @@ bool not_verified(std::string password)
     return uppercase >= 1 && lowercase >= 1 && specialChar >= 1;
 }
 
+//TODO: add newFeild for signup date (ex: joined: 05/12/2022)
 void sign_up()
 {
     std::string userName = "";
@@ -57,20 +96,17 @@ void sign_up()
 
     while (!not_verified(password))
     {
-        std::cout << "Please choose a password" << '\n';
+        std::cout << "Please choose a password (length between 15 and 30, must include 1 Uppercase, 1 lowercase and 1 special character" << '\n';
         std::cin >> password;
     }
- 
+
     // Instantiation of Object
     std::hash<std::string> hash_fn;
-    std::size_t hashedPassword = hash_fn(password);
+    std::size_t hashedPassword = hash_fn(password); // TODO: Change the hash function later
 
     // Using operator() to get hash value
-    
-    std::cout << "Welcome, \nYour username is " + userName + "\n";
-    std::cout << hashedPassword;
-    std::cout << "\n";
-    std::cout << hash_fn("@Ldst123456");
+
+    store_in_json(userName, hashedPassword);  //this function will store the data in json file
 }
 
 void log_in()
@@ -106,5 +142,6 @@ int main(int argc, char const *argv[])
     {
         log_in();
     }
+
     return 0;
 }

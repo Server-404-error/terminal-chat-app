@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/json-subbuild/CMakeFiles/json-populate"
+		},
+		{
+			"file" : "/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/json-subbuild/CMakeFiles/json-populate.rule"
+		},
+		{
+			"file" : "/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/json-subbuild/CMakeFiles/json-populate-complete.rule"
+		},
+		{
+			"file" : "/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-install.rule"
+		},
+		{
+			"file" : "/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-mkdir.rule"
+		},
+		{
+			"file" : "/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-download.rule"
+		},
+		{
+			"file" : "/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-update.rule"
+		},
+		{
+			"file" : "/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-patch.rule"
+		},
+		{
+			"file" : "/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-configure.rule"
+		},
+		{
+			"file" : "/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-build.rule"
+		},
+		{
+			"file" : "/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"json-populate"
+		],
+		"name" : "json-populate"
+	}
+}
