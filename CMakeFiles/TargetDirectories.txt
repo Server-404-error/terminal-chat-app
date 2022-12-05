@@ -1,5 +1,0 @@
-/media/moussa/Maxtor/personalProjects/openSource/c++/irc/CMakeFiles/rebuild_cache.dir
-/media/moussa/Maxtor/personalProjects/openSource/c++/irc/CMakeFiles/edit_cache.dir
-/media/moussa/Maxtor/personalProjects/openSource/c++/irc/CMakeFiles/chat.dir
-/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/json-build/CMakeFiles/edit_cache.dir
-/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/json-build/CMakeFiles/rebuild_cache.dir
