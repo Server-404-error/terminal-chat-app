@@ -1,0 +1,3 @@
+/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/json-subbuild/CMakeFiles/rebuild_cache.dir
+/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/json-subbuild/CMakeFiles/edit_cache.dir
+/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/json-subbuild/CMakeFiles/json-populate.dir
