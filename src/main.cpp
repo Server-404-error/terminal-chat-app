@@ -8,23 +8,6 @@
 using json = nlohmann::json;
 using namespace std;
 
-int read()
-{
-    std::string file = "src/data.json";
-    std::ifstream f(file);
-    json data = json::parse(f);
-    // Access the values existing in JSON data
-    string name = data.value("name", "not found");
-    string grade = data.value("grade", "not found");
-    string email = data.value("email", "not found");
-    // Print the values
-    f.close();
-    std::cout << "Name : " << name << std::endl;
-    std::cout << "Grade : " << grade << std::endl;
-    std::cout << "Email : " << email << std::endl;
-
-    return 0;
-}
 
 void store_in_json(std::string username, std::size_t hashedPassword)
 {
