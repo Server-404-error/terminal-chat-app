@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/ftxui_example_dropdown.dir/dropdown.cpp.o  -o ftxui_example_dropdown  ../../libftxui-component.a ../../libftxui-dom.a ../../libftxui-screen.a -lpthread 

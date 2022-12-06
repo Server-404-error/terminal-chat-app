@@ -1,0 +1,14 @@
+# Target labels
+ ftxui-populate
+# Source files and their labels
+/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/ftxui-subbuild/CMakeFiles/ftxui-populate
+/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/ftxui-subbuild/CMakeFiles/ftxui-populate.rule
+/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/ftxui-subbuild/CMakeFiles/ftxui-populate-complete.rule
+/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-install.rule
+/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-mkdir.rule
+/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-download.rule
+/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-update.rule
+/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-patch.rule
+/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-configure.rule
+/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-build.rule
+/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-test.rule

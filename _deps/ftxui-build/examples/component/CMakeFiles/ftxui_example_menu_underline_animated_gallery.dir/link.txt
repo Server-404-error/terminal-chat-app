@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/ftxui_example_menu_underline_animated_gallery.dir/menu_underline_animated_gallery.cpp.o  -o ftxui_example_menu_underline_animated_gallery  ../../libftxui-component.a ../../libftxui-dom.a ../../libftxui-screen.a -lpthread 

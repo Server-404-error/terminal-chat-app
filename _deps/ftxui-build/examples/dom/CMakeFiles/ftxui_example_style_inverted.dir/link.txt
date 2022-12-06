@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/ftxui_example_style_inverted.dir/style_inverted.cpp.o  -o ftxui_example_style_inverted  ../../libftxui-dom.a ../../libftxui-screen.a 

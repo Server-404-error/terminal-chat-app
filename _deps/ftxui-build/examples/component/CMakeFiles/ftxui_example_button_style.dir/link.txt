@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/ftxui_example_button_style.dir/button_style.cpp.o  -o ftxui_example_button_style  ../../libftxui-component.a ../../libftxui-dom.a ../../libftxui-screen.a -lpthread 

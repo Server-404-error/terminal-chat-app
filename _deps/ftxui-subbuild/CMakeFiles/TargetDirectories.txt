@@ -1,0 +1,3 @@
+/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/ftxui-subbuild/CMakeFiles/rebuild_cache.dir
+/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/ftxui-subbuild/CMakeFiles/edit_cache.dir
+/media/moussa/Maxtor/personalProjects/openSource/c++/irc/_deps/ftxui-subbuild/CMakeFiles/ftxui-populate.dir

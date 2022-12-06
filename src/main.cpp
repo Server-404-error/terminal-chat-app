@@ -3,22 +3,22 @@
 #include <stdbool.h>
 #include <string>
 #include <fstream>
-#include <nlohmann/json.hpp>  //ignore the squigly lines if you have them
+#include <nlohmann/json.hpp> //ignore the squigly lines if you have them
 
 using json = nlohmann::json;
 using namespace std;
-
 
 void store_in_json(std::string username, std::size_t hashedPassword)
 {
     json user;
     std::ifstream i("users.json");
-    if(i.is_open()){
+    if (i.is_open())
+    {
         i >> user;
     }
     // system("cls");
     int userCount = 0;
-    for (auto it = user.begin(); it != user.end(); ++it) //we iterate through the json file to add the new user in the end, 
+    for (auto it = user.begin(); it != user.end(); ++it) // we iterate through the json file to add the new user in the end,
     {
         userCount += 1;
         std::cout << *it << std::endl;
@@ -63,7 +63,7 @@ bool not_verified(std::string password)
     return uppercase >= 1 && lowercase >= 1 && specialChar >= 1;
 }
 
-//TODO: add newFeild for signup date (ex: joined: 05/12/2022)
+// TODO: add newFeild for signup date (ex: joined: 05/12/2022)
 void sign_up()
 {
     std::string userName = "";
@@ -89,7 +89,7 @@ void sign_up()
 
     // Using operator() to get hash value
 
-    store_in_json(userName, hashedPassword);  //this function will store the data in json file
+    store_in_json(userName, hashedPassword); // this function will store the data in json file
 }
 
 void log_in()
@@ -125,6 +125,7 @@ int main(int argc, char const *argv[])
     {
         log_in();
     }
+
 
     return 0;
 }

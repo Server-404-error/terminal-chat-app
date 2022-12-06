@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/ftxui_example_with_restored_io.dir/with_restored_io.cpp.o  -o ftxui_example_with_restored_io  ../../libftxui-component.a ../../libftxui-dom.a ../../libftxui-screen.a -lpthread 

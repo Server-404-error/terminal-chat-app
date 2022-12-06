@@ -3,7 +3,8 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**../bin/json/include"
+                "${workspaceFolder}/_deps/json-src/include",
+                "${workspaceFolder}/_deps/ftxui-src/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/ftxui_example_maybe.dir/maybe.cpp.o  -o ftxui_example_maybe  ../../libftxui-component.a ../../libftxui-dom.a ../../libftxui-screen.a -lpthread 

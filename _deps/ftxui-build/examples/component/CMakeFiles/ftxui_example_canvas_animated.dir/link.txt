@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/ftxui_example_canvas_animated.dir/canvas_animated.cpp.o  -o ftxui_example_canvas_animated  ../../libftxui-component.a ../../libftxui-dom.a ../../libftxui-screen.a -lpthread 

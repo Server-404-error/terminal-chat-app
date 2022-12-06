@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/ftxui_example_menu_entries_animated.dir/menu_entries_animated.cpp.o  -o ftxui_example_menu_entries_animated  ../../libftxui-component.a ../../libftxui-dom.a ../../libftxui-screen.a -lpthread 
