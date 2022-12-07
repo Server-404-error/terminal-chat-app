@@ -92,7 +92,7 @@ void sign_up()
     store_in_json(userName, hashedPassword); // this function will store the data in json file
 }
 
-void log_in()
+inline void log_in()
 {
     system("clear");
     std::cout << "you want to log in" << '\n';
@@ -112,7 +112,7 @@ int choices()
 int main(int argc, char const *argv[])
 {
     int choice = choices();
-    while (choice != 1 && choice != 2)
+    while (choice != 1 || choice != 2)
     {
         choice = choices();
     }
