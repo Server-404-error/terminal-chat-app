@@ -5,6 +5,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 project(chat VERSION 1.0)
 add_executable(chat
   src/main.cpp
+  src/server/server.cpp
+  src/server/client.cpp
   src/user.cpp
   include/user.hpp
 )
