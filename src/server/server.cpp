@@ -5,6 +5,10 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 
+
+
+
+
 int main(int argc, char const *argv[])
 {
     std::string ip_addr = "127.0.0.1";
@@ -36,7 +40,7 @@ int main(int argc, char const *argv[])
     n = bind(server_sock, (struct sockaddr *)&server_addr, sizeof(server_addr));
     if (n < 0)
     {
-        std::cerr << "[*] Failed to cbind :( \n"
+        std::cerr << "[*] Failed to bind :( \n"
                   << std::endl;
         exit(1);
     }
@@ -50,27 +54,21 @@ int main(int argc, char const *argv[])
     client_sock1 = accept(server_sock, (struct sockaddr *)&client_addr1, &addr_size1);
     std::cout << "[+]Client 1 connected" << std::endl;
 
-    //--------------------client 2 ---------------------------
-
-    addr_size2 = sizeof(client_addr2);
-    client_sock2 = accept(server_sock, (struct sockaddr *)&client_addr2, &addr_size2);
-    std::cout << "[+]Client 2 connected" << std::endl;
+    //for the server to receive data we are obliged to initialize sockets for clients
+    //we need a way for the server to accept any incoming connection
 
     std::string m;
     bool on = true;
     while (on)
     {
-        bzero(buffer, 1024);
-        recv(client_sock1, buffer, strlen(buffer), 0);
-        if(strcmp(buffer, "quit"))
-            on = false;
-        send(client_sock2, buffer, strlen(buffer), 0);
-
+        
         bzero(buffer, 1024);
         recv(client_sock2, buffer, strlen(buffer), 0);
-        if(strcmp(buffer, "quit"))
-            on = false;
-        send(client_sock1, buffer, strlen(buffer), 0);
+        std::string str(buffer);
+        std::cout << str << std::endl;
+        // if(strcmp(buffer, "quit"))
+        //     on = false;
+        
     }
     close(client_sock1);
     close(client_sock2);
